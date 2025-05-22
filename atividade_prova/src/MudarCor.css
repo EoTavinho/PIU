@@ -1,0 +1,16 @@
+body.claro {
+    background-color: white;
+    color: black;
+  }
+  
+  body.escuro {
+    background-color: #121212;
+    color: white;
+  }
+  
+  .toggle-button {
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
