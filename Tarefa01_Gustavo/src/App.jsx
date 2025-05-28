@@ -12,16 +12,34 @@ import yamal from './assets/yamal.webp';
 import r10 from './assets/r10.jfif';
 
 const personagens = [
-  { nome: 'Neymar', imagem: neymar, descricao: 'Príncipe que não virou rei' },
-  { nome: 'CR7', imagem: cr7, descricao: 'Melhor jogador do Real' },
-  { nome: 'Messi', imagem: messi, descricao: 'GOAT' },
-  { nome: 'Raphinha', imagem: raphinha, descricao: 'O injustiçado' },
-  { nome: 'Yamal', imagem: yamal, descricao: 'Melhor jogador novo existente' },
-  { nome: 'R10', imagem: r10, descricao: 'Melhor driblador da história' }
+  { nome: 'Neymar', 
+    imagem: neymar, 
+    descricao: 'Príncipe que não virou rei' },
+
+  { nome: 'CR7', 
+    imagem: cr7, 
+    descricao: 'Melhor jogador do Real' },
+
+  { nome: 'Messi', 
+    imagem: messi, 
+    descricao: 'GOAT' },
+
+  { nome: 'Raphinha', 
+    imagem: raphinha, 
+    descricao: 'O injustiçado' },
+
+  { nome: 'Yamal', 
+    imagem: yamal, 
+    descricao: 'Melhor jogador novo existente' },
+
+  { nome: 'R10', 
+    imagem: r10, 
+    descricao: 'Melhor driblador da história' }
+    
 ];
 
 function App() {
-  const [tema, setTema] = useState('light')
+  const [tema, setTema] = useState('light'); // setTema serve pra alterar o valor de tema
   const[selecionado, setSelecionado] = useState(null);
 
   const alternarTema = () => {
