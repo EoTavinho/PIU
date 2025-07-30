@@ -6,8 +6,8 @@ function App() {
 
   return (
     <>
-      {/* <FormCor/> */}
-      <ListarTarefas/>
+      <FormCor/>
+      {/* <ListarTarefas/> */}
     </>
   )
 }

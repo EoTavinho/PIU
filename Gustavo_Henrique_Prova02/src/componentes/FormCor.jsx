@@ -2,12 +2,13 @@ import { useState, useEffect } from "react";
 
 
 export default function FormCor() {
-    const [cor, setCor] = useState('')
+    const [cor, setCor] = useState('light')
     const [select, setSelect] = useState()
+    const [nome , setNome] = useState()
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setCor(select)
+        setCor(cor)
     }
 
     const handleColor = () =>{
@@ -30,7 +31,7 @@ export default function FormCor() {
                 <input 
                     type="text"
                     value={nome}
-                    onChange={(e) => e.target.value}
+                    onChange={(e) => setNome(e.target.value)}
                     placeholder="Nome"
                  />
                 
@@ -43,7 +44,9 @@ export default function FormCor() {
                 
                 <button type='submit' onClick={handleColor}>Enviar</button>
 
-        
+                <p>{nome}</p>
+                <p>{select}</p>
+
             </form>
         </div>
     )
