@@ -13,8 +13,8 @@ export default function CountClicks() {
     }
 
   useEffect(() => {
-    handleColor()
-  }, )
+    handleColor();
+  },[count])
 
   return (
     <>
